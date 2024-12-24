@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>readonly</title>
+</head>
+<body>
+  <div id="app">
+    <div>
+      <div>test demo {{msgOnly.hello}}</div>
+    </div>
+  </div>
+  <script src="../../dist/vue.global.js"></script>
+  <script>
+    Vue.createApp({
+      setup() {
+        const msg = Vue.reactive({hello: 'Hello'})
+        debugger
+        const msgOnly = Vue.readonly(msg)
+        return {
+          msgOnly
+        }
+      }
+    }).mount('#app')
+  </script>
+</body>
+</html>
