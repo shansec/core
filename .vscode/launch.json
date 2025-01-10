@@ -8,7 +8,7 @@
       "name": "Launch Chrome",
       "request": "launch",
       "type": "chrome",
-      "url": "E:/major/vue-source-code/core/packages/vue/self-examples",
+      "url": "E:/github.com/core/packages/vue/learn",
       "webRoot": "${workspaceFolder}"
     },
     {
